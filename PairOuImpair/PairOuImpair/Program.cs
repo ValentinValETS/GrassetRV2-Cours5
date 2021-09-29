@@ -11,10 +11,11 @@ namespace PairOuImpair
         static void Main()
         {
             //Déclaration de variables (entiers)
-            XXX num1, num2;
+            XXX num1;
+            XXX num2;
             Console.WriteLine("Please Enter Any Number Check Even or odd.");
 
-            //Initialisation de variables
+            //Initialisation des variables
             num1 = Convert.ToInt32(Console.ReadLine());
             num2 = XXX XXX 2;
 
