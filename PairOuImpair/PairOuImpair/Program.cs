@@ -19,10 +19,14 @@ namespace PairOuImpair
             num2 = XXX XXX 2;
 
             if (XXX XXX 0)
+            {
                 Console.WriteLine("\n{0} is Even Number.", XXX);
+            }                
             else
+            {
                 Console.WriteLine("\n{0} is odd Number.", XXX);
-
+            }
+               
             Console.ReadKey();
         }
     }
