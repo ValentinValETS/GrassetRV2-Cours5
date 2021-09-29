@@ -16,7 +16,7 @@ namespace PairOuImpair
 
             //Initialisation de variables
             num1 = Convert.ToInt32(Console.ReadLine());
-            num2 = XXX % 2;
+            num2 = XXX XXX 2;
 
             if (XXX == 0)
                 Console.WriteLine("\n{0} is Even Number.", XXX);
