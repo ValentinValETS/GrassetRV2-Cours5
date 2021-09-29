@@ -18,7 +18,7 @@ namespace PairOuImpair
             num1 = Convert.ToInt32(Console.ReadLine());
             num2 = XXX XXX 2;
 
-            if (XXX == 0)
+            if (XXX XXX 0)
                 Console.WriteLine("\n{0} is Even Number.", XXX);
             else
                 Console.WriteLine("\n{0} is odd Number.", XXX);
