@@ -10,32 +10,28 @@ namespace DevinerNombre
     {
         static void Main(string[] args)
         {
-            //Sortir un nombre aléatoire compris entre 1 et 10
             Random random = new Random();
             int numeroADeviner = random.Next(10) + 1;
 
-            //Initialisation du nombre que l'utilisateur va rentrer
-            int numeroEntre;
-            //
-            //
+            int numeroEntre = 0;
+            Console.WriteLine("Devinez un nombre compris entre 1 et 10");
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Veuillez entrer un chiffre");
 
-            //
-            //
-
-            //Récupère le nombre entré par l'utilisateur et le convertit en entier
-            if (!Int32.TryParse(Console.ReadLine(), out numeroEntre))
+            while (numeroEntre != numeroADeviner)
+            {
+                if (!Int32.TryParse(Console.ReadLine(), out numeroEntre))
                     Console.WriteLine("Échec de la conversion du nombre !");
-
-            //
-            //
-            //
-            //
-      
-            //
-            //
-            //
-
-            //Une fois l'opération effectuée, message d'attente avant de fermer le programme
+                else
+                {
+                    if (numeroEntre < numeroADeviner)
+                        Console.WriteLine("Nombre plus grand");
+                    else if(numeroEntre > numeroADeviner)
+                        Console.WriteLine("Nombre plus petit");
+                }
+            }
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Nombre deviné !");
             Console.WriteLine("Tapez n'importe quelle touche pour terminer...");
             Console.WriteLine("---------------------------------------");
             Console.ReadLine();
